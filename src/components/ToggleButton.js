@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const ToggleButton = ({isToggle, onToggle}) => {
+const ToggleButton = () => {
+    const [isToggle, setIsToggle] = useState(false);
+  const onToggle = (e) => {
+    console.log(isToggle);
+    setIsToggle(!isToggle)
+  }
     return (
        
       
-        <label htmlFor="checkbox" className="label">
-              <input type="checkbox" name="checkbox" className="check" id="checkbox" checked={isToggle} onChange={(e)=>onToggle()}/>
+        <label className="label">
+              <input type="checkbox" name="checkbox" className="check"  checked={isToggle} onChange={onToggle}/>
             <span className="slider"></span>
             
         </label>

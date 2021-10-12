@@ -1,13 +1,13 @@
 import React from 'react';
 import ToggleButton from './ToggleButton'
 
-const CargoDetail = ({ isToggle, onToggle }) => {
+const CargoDetail = () => {
     return (
         <section className="service">
             <div className="flex-between">
                 <h3 className="card-h3">Cargo Details</h3>
                 <div className="flex-between">
-                    <ToggleButton isToggle={!isToggle} onToggle={onToggle} />
+                    <ToggleButton  />
                     <p className="text-center">Dangerous Cargo (ex. Chemicals, Battery)</p>
                 </div>
             </div>

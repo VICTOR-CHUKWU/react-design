@@ -2,7 +2,7 @@ import React from 'react';
 import { additionalData } from '../data';
 import ToggleButton from './ToggleButton'
 
-const AdditionalService = ({ isToggle, onToggle }) => {
+const AdditionalService = () => {
     return (
         <section className="service">
               <h3 className="card-h3">Additional Services</h3>
@@ -12,7 +12,7 @@ const AdditionalService = ({ isToggle, onToggle }) => {
                           const { title, descriptiion, index } = item
                           return(
                            <div className="grid-items" key={index}>
-                            <ToggleButton isToggle={isToggle} onToggle={onToggle} />
+                            <ToggleButton />
                             <div className="grid-items-right">
                                 <h3  className="card-h3">{title}</h3>
                                 <p >{descriptiion}</p>
